@@ -2,7 +2,8 @@
 
 Pi-hole needs an address that never changes. Pick one of these, then use that IP everywhere in the video.
 Replace `10.37.0.41/24` with your address, `10.37.0.1` with your router (gateway), and `eth0` / `ens18` with your
-interface name (find both with `ip -br a` and `ip r`).
+interface name (find both with `ip -br a` and `ip r`). If it shows something like `eth0@if68` (containers do this),
+the name is just the part before the `@`.
 
 **Easiest, works for every distro:** create a DHCP reservation for this machine in your router's DHCP settings, so
 the router always hands it the same address. Nothing to change on the machine.
