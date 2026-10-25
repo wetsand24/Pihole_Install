@@ -15,6 +15,10 @@ Check its current address and your router (gateway):
 ip -br a
 ip r
 ```
+Your interface name is the first column of `ip -br a` (e.g. `eth0`, `ens18`, `enp0s3`). In the video it shows
+`eth0@if68` because the Pi-hole runs in a Proxmox container: `@if68` just points to the other end of its virtual
+cable on the host. The name to use in the config is still `eth0`. Use your own name wherever you see `eth0` below.
+
 **Debian** (what the video shows). Edit the network file:
 ```bash
 nano /etc/network/interfaces
