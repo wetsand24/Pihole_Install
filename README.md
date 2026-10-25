@@ -3,7 +3,7 @@
 Every command and setting from the video, in order. Replace `10.37.0.41` with your Pi-hole machine's IP and
 `10.37.0.1` with your router.
 
-▶️ Video: https://youtu.be/yp5UkhIYKB0
+▶️ Video: https://youtu.be/k9GPXPp1KU0
 
 ## What you need
 - Any Debian or Ubuntu machine: a Raspberry Pi, an old laptop, a VM or an LXC container (1 core, 512 MB RAM is plenty)
