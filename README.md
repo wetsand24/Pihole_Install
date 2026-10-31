@@ -39,7 +39,7 @@ ip -br a
 ```bash
 cat /etc/resolv.conf
 ```
-No `nameserver` line? Add one: `echo "nameserver 1.1.1.1" | sudo tee /etc/resolv.conf`.
+No `nameserver` line? Add one: `echo "nameserver 1.1.1.1" > /etc/resolv.conf`.
 If the `resolvconf` package is installed, add `dns-nameservers 1.1.1.1` under the `gateway` line instead.
 
 **Ubuntu, Fedora, RHEL, Arch, Raspberry Pi OS:** see [STATIC-IP-GUIDE.md](STATIC-IP-GUIDE.md).
@@ -76,8 +76,8 @@ nslookup doubleclick.net
 ```
 The answer now comes from `pi.hole` and it's `0.0.0.0`, which means blocked.
 
-> If your PC also has IPv6 DNS from the router, it can bypass Pi-hole. Either set the IPv6 DNS to Pi-hole's IPv6
-> address too, or turn on Pi-hole's DHCP/router DNS for the whole house (step 6).
+> If your PC also gets an IPv6 DNS server from the router, it can bypass Pi-hole. Either set the IPv6 DNS server on
+> the same adapter to Pi-hole's IPv6 address too, or stop the router from handing out its own IPv6 DNS server.
 
 ## 4. Better blocklists
 Pi-hole web UI → **Lists** → add:
