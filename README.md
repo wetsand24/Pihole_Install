@@ -105,6 +105,9 @@ Give the kids' device a fixed IP (DHCP reservation in the router) so the rule ke
 In your router's DHCP settings, set the **DNS server** to your Pi-hole's IP. Every device picks it up on its next
 lease (or reconnect). Keep a second option in mind: if the Pi-hole machine goes down, DNS goes down with it.
 
+**Next: a backup Pi-hole that takes over by itself.** Two Pi-holes share one IP with keepalived, and the settings
+stay in sync: [Pihole_HA](https://github.com/wetsand24/Pihole_HA) · ▶️ Video: https://youtu.be/UDNSbAFTXxQ
+
 ## What Pi-hole can't block
 YouTube ads. They come from the same servers as the videos. Use a browser ad blocker for YouTube.
 
@@ -115,3 +118,4 @@ YouTube ads. They come from the same servers as the videos. Use a browser ad blo
 ## Links
 - Pi-hole: https://pi-hole.net · docs: https://docs.pi-hole.net
 - OISD blocklists: https://oisd.nl
+- Pi-hole High Availability (backup Pi-hole + sync): https://github.com/wetsand24/Pihole_HA
