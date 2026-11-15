@@ -6,7 +6,8 @@ Every command and setting from the video, in order. Replace `10.37.0.41` with yo
 ▶️ Video: https://youtu.be/k9GPXPp1KU0
 
 ## What you need
-- Any Debian or Ubuntu machine: a Raspberry Pi, an old laptop, a VM or an LXC container (1 core, 512 MB RAM is plenty)
+- Any Debian or Ubuntu machine: a Raspberry Pi, an old laptop, a VM or an LXC container
+- 512 MB RAM and 2 GB free disk (4 GB recommended)
 - A static IP for it (step 1)
 
 ## 1. Give the machine a static IP
